@@ -196,6 +196,35 @@ export class GuiModel {
                     ]
                 },
                 {
+                    "id": "AddActivityTwoForm",
+                    "title": "Activity",
+                    "url": "/friend/:friendKey/activity",
+                    "formFieldList": [
+                        {
+                            "id":   "activity",
+                            "type": "autocomplete",
+                            "name": "Activity",
+                            "url": "/activity",
+                            "defaultKey": "activityKey",
+                            "readonly": true,
+                            "form": "ActivityForm",
+                            "width": 2
+                        },
+                        {
+                            "type": "deleteButton",
+                            "name": "Delete"
+                        },
+                        {
+                            "type": "cancelButton",
+                            "name": "Cancel"
+                        },
+                        {
+                            "type": "okButton",
+                            "name": "Ok"
+                        }
+                    ]
+                },
+                {
                     "id": "GroupForm",
                     "title": "Group",
                     "url": "/group",
@@ -300,7 +329,7 @@ export class GuiModel {
                             "color": "blue",
                             "search": true,
                             "url": "/friend",
-                            "page": "testspage",
+                            "page": "editspage",
                         },
                     ]
                 },
@@ -387,7 +416,7 @@ export class GuiModel {
                     ]
                 },
                 {
-                    "id": "testspage",
+                    "id": "editspage",
                     "elementList": [
                         {
                             "type": "backbutton",
@@ -407,7 +436,7 @@ export class GuiModel {
                             "icon": "fa-child",
                             "color": "green",
                             "form": {
-                                "form": "AddActivityForm"
+                                "form": "AddActivityTwoForm"
                             }
                         },
                         {
