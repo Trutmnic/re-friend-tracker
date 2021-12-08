@@ -210,7 +210,7 @@ export class GuiModel {
                         {
                             "id": "creationdate",
                             "type": "date",
-                            "name": "CreationDate",
+                            "name": "Date",
                             "width": 2
                         },
                         {
